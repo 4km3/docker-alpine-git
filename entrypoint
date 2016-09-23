@@ -1,0 +1,8 @@
+#!/bin/sh
+
+UID=$(stat -c %u "$GIT_WORK_TREE")
+GID=$(stat -c %g "$GIT_WORK_TREE")
+
+echo "Running git with UID: $UID, GID: $GID"
+
+exec /usr/bin/gosu $UID:$GID /usr/bin/git "$@"
