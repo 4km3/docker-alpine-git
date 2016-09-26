@@ -1,9 +1,6 @@
 FROM        alpine:3.4
 MAINTAINER  pancho horrillo <pancho@pancho.name>
 
-ENV GIT_DIR=/workdir/.git        \
-    GIT_WORK_TREE=/workdir
-
 LABEL Description="git client"   \
       Vendor="ACME Products"     \
       Version="1.0"
