@@ -3,7 +3,7 @@ Run git
 
 ## Building
 ```console
-$ docker build -t pancho/git .
+$ docker build -t 4km3/git .
 ```
 ## Configuration
 ### Default values
@@ -19,7 +19,7 @@ $ docker run                    \
         -it                     \
         --rm                    \
         -v $PWD:/workdir        \
-        pancho/git status
+        4km3/git status
 ```
 
 For your convenience, a bash function named 'git' is provided in `git.bash`:
